@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: (hhttps://github.com/Adu-Boahen/christmasPartyWebsite.git)
+- Solution URL: (https://github.com/Adu-Boahen/christmasPartyWebsite.git)
 - Live Site URL:(https://christmaswebsiteforevents.netlify.app)
 
 ## My process
