@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Adu-Boahen/blog-preview-card.git)
-- Live Site URL: [Add live site URL here](https://christmaswebsiteforevents.netlify.app)
+- Solution URL: (hhttps://github.com/Adu-Boahen/christmasPartyWebsite.git)
+- Live Site URL:(https://christmaswebsiteforevents.netlify.app)
 
 ## My process
 
