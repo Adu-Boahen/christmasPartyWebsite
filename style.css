@@ -1,0 +1,1086 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    font-family: cursive;
+    text-decoration: none;
+}
+
+:root {
+    ---background: rgba(190, 5, 5, 0.904);
+    --main-color: rgb(24, 155, 24);
+}
+
+/*-------header--------*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 4%;
+    background: var(---background);
+}
+
+header .logo {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    color: ghostWhite;
+    cursor: pointer;
+}
+
+header .logo img {
+    width: 60px;
+    height: 60px;
+}
+.menuBtn,.closeBtn{
+    display: none;
+}
+
+header nav a {
+    font-size: 1.8em;
+    margin-left: 20px;
+    color: #fff;
+}
+
+.active,
+header nav a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/*----landing-page------*/
+.landingPageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.landingPageOne,
+.landingPageTwo,
+.landingPageThree {
+    width: 100%;
+    height: 96vh;
+    padding: 40px 4%;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/backgroundOne.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.landingPageOne {
+    display: block;
+}
+
+.landingPageTwo {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/backgroundtwo.jpg');
+    display: none;
+}
+
+.landingPageThree {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('images/backgroundthree.jpg');
+    display: none;
+}
+
+.landingPageOne h2,
+.landingPageTwo h2,
+.landingPageThree h2 {
+    font-size: 4em;
+    margin-top: 67px;
+    color: #fff;
+}
+
+.landingPageOne p,
+.landingPageTwo p,
+.landingPageThree p {
+    font-size: 1.8em;
+    margin-top: 15px;
+    line-height: 45px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.landingPageOne a,
+.landingPageTwo a,
+.landingPageThree a {
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 370px;
+    justify-content: space-between;
+}
+
+.landingPageOne a img,
+.landingPageTwo a img,
+.landingPageThree a img {
+    width: 40px;
+    height: 50px;
+}
+
+.landingPageOne a:hover,
+.landingPageTwo a:hover,
+.landingPageThree a:hover {
+    background-color: var(---background);
+}
+
+/*-page-swicher*/
+.landingPageContainer .pageswitcher {
+    z-index: 76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    position: absolute;
+    bottom: 120px;
+    right: 70px;
+}
+
+.pageswitcher .switcher {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.pageswitcher .switcher-a {
+    background-color: var(--main-color);
+}
+
+/*--------about us section------*/
+.about {
+    padding: 30px 4%;
+    background-color: var(---background);
+}
+
+.about .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 1em;
+}
+
+.about .heading h2 {
+    font-size: 3.4em;
+    color: #fff;
+}
+
+.about .heading img {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.about .aboutContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.aboutContainer .aboutPic {
+    width: 47%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.aboutPic img {
+    width: 40%;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.about .aboutText {
+    width: 45%;
+    padding: 14px;
+}
+
+.aboutText p {
+    font-size: 2em;
+    color: #fff;
+    line-height: 44px;
+    margin-bottom: 16px;
+}
+
+.aboutText a {
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.aboutText a:hover {
+    color: var(---background);
+    background-color: #fff;
+}
+
+/*-------evetns-section-----*/
+.events {
+    padding: 30px 4%;
+    background: rgb(46, 45, 45);
+    position: relative;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2em;
+    margin: 30px auto;
+}
+
+.heading h2 {
+    font-size: 3.4em;
+    color: #fff;
+}
+
+.events .heading img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.eventsContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+    gap: 2.4em;
+    margin-bottom: 40px;
+}
+
+.eventsContainer .box {
+    width: 31%;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    flex-grow: 1;
+    background-color: #fff;
+}
+
+.eventsContainer .box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.eventsContainer .box span {
+    font-size: 1.8em;
+    color: var(--main-color);
+    margin: 10px 1px;
+}
+
+.eventsContainer .box b {
+    color: #000;
+    font-size: 1.5em;
+    display: block;
+    margin-top:5px;
+}
+
+/*---when user clicks on event to know more---*/
+.furtherInfo {
+    width: 60%;
+    padding: 20px 4% ;
+    border-radius: 20px;
+    background: var(--main-color);
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+.furtherInfo .furtherInfoClose {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    cursor: pointer;
+}
+
+.furtherInfo .title {
+    font-size: 2.3em;
+    margin: 34px auto;
+    text-decoration: underline;
+    color: #fff;
+}
+
+.furtherInfo .eventImage {
+    width: 95%;
+    height: 420px;
+    border-radius: 15px;
+    margin: 10px auto;
+}
+
+.furtherInfo .time {
+    margin: 20px 2px 10px;
+    color: var(---background);
+    font-size: 2em;
+}
+
+.furtherInfo p {
+    color: #fff;
+    margin: 15px auto 20px;
+    font-size: 1.3em;
+    line-height: 38px;
+}
+
+/*------tickets-section----*/
+.tickets {
+    padding: 30px 4%;
+    background: var(--main-color);
+    position: relative;
+}
+
+.tickets .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4em;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.tickets .heading h2 {
+    font-size: 3.4em;
+    color: #fff;
+}
+
+.tickets .heading h5 {
+    font-size: 1.4em;
+}
+
+.tickets .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1.8em;
+}
+
+.tickets .container form {
+    width: 48%;
+    padding: 20px 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2em;
+    flex-direction: column;
+}
+
+.container form div {
+    background: #fff;
+    padding: 10px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.container form div label {
+    font-size: 1.8em;
+    color: #000;
+    margin-right: 15px;
+}
+
+.container form div input {
+    width: 60%;
+    color: #000;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+}
+
+
+div span {
+    font-size: 1.4em;
+    padding: 4px;
+    width: 20%;
+    cursor: pointer;
+    margin: 1px 10px;
+}
+div .plus{
+    font-size: 2em;
+}
+
+.tickets .container .ticketImages {
+    width: 43%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container .ticketImages .img {
+    width: 43%;
+    flex-grow: 1;
+    border-radius: 20px;
+    height: 190px;
+    border: 3px solid #fff;
+}
+
+/**/
+.bar {
+    width: 100%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+    box-shadow: 1px 1px 2px #666;
+    cursor: pointer;
+}
+
+.bar h4 {
+    font-size: 1.2em;
+}
+
+.bar .arrow {
+    background: var(--main-color);
+    transform: rotate(90deg);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.arrow span {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+.container .dropDown {
+    display: none;
+    background: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #666;
+}
+
+.dropDown .option {
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.dropDown .option:hover {
+    background: #eee9e9;
+}
+
+.dropDown .option b {
+    padding: 2px 340px 2px 10px;
+}
+
+/*-------footer----------*/
+footer {
+    padding: 20px 4%;
+    background: var(---background);
+}
+
+footer .row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1em;
+}
+
+footer .row .col-1 {
+    width: 30%;
+}
+
+footer .row .col-1 .logo {
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    color: ghostWhite;
+    cursor: pointer;
+    margin-bottom: 9px;
+}
+
+footer .row .col-1 .logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.col-1 p {
+    font-size: 1.4em;
+    color: #fff;
+    line-height: 33px;
+}
+
+footer .row .col-2 {
+    width: 22%;
+    margin-top: 15px;
+}
+
+.row .col-2 h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+.col-2 a {
+    font-size: 1.4em;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 12px;
+    display: block;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+footer .col-3 {
+    width: 22%;
+    margin-top: 15px;
+}
+
+.col-3 h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.col-3 a {
+    font-size: 1.4em;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 12px;
+    display: block;
+    letter-spacing: 2px;
+}
+
+footer .row .col-4 {
+    width: 20%;
+    margin-top: 15px;
+}
+
+.col-4 h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.col-4 a {
+    font-size: 1.4em;
+    color: #fff;
+    text-decoration: underline;
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+    margin-right: 7px;
+}
+
+.twitter {
+    width: 32px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.col-4 .whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.col-4 .whatsapp b{
+    font-size: 1.1em;
+    color:#fff;
+}
+
+/*==============responsive-design=================*/
+/*---for tablet screen--------*/
+@media screen and (max-width:1000px){
+    
+.landingPageOne h2,
+.landingPageTwo h2,
+.landingPageThree h2 {
+    font-size: 3em;
+    margin-top: 47px;
+}
+
+.landingPageOne p,
+.landingPageTwo p,
+.landingPageThree p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.landingPageOne a:hover,
+.landingPageTwo a:hover,
+.landingPageThree a:hover {
+    background-color: var(---background);
+}
+
+/*-page-swicher*/
+.landingPageContainer .pageswitcher {
+    gap: 0.4em;
+}
+
+
+/*--------about us section------*/
+
+.about .heading h2 {
+    font-size: 2.9em;
+}
+
+.about .heading img {
+    width: 50px;
+    height: 50px;
+}
+
+.aboutContainer .aboutPic {
+    gap: 0.6em;
+}
+
+.aboutPic img {
+    width: 45%;
+    height: 180px;
+}
+
+.aboutText p {
+    font-size: 1.5em;
+    line-height: 36px;
+}
+
+/*-------footer----------*/
+footer {
+    padding: 20px 3%;
+}
+
+footer .row {
+    gap: 0.4em;
+}
+
+footer .row .col-1 .logo {
+    font-size: 2em;
+}
+
+footer .row .col-1 .logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.col-1 p {
+    font-size: 1.2em;
+    line-height: 29px;
+}
+.row .col-2 h2 {
+    font-size: 1.4em;
+}
+
+.col-2 a {
+    font-size: 1em;
+}
+
+.col-3 h2 {
+    font-size: 1.4em;
+}
+
+.col-3 a {
+    font-size: 1em;
+}
+
+.col-4 h2 {
+    font-size: 1.4em;
+}
+
+.col-4 a {
+    font-size: 1em;
+}
+/*---when user clicks on event to know more---*/
+.furtherInfo {
+    width: 50%;
+    padding: 10px 1% 150px;
+    left: 17%;
+    top: 10%;
+}
+
+.furtherInfo .furtherInfoClose {
+    right: 20px;
+    top: 20px;
+}
+
+.furtherInfo .title {
+    font-size: 2em;
+    margin: 20px auto;
+}
+
+.furtherInfo .eventImage {
+    width: 100%;
+    height: 300px;
+}
+
+.furtherInfo .time {
+    margin: 10px 2px;
+    font-size: 1.4em;
+}
+
+.furtherInfo p {
+    margin: 10px auto;
+    font-size: 1em;
+    line-height: 31px;
+}
+
+}
+
+/*---for tablet screen--------*/
+@media screen and (max-width:910px){
+    
+/*-------header--------*/
+header {
+    padding: 20px 2%;
+}
+
+header .logo {
+    font-size: 3em;
+}
+
+.menuBtn,.closeBtn{
+    display: block;
+    cursor: pointer;
+    padding: 20px;
+}
+.closeBtn{
+    position:absolute;
+    top:40px;
+    right: 40px;
+}
+header nav{
+    width:400px;
+    height:100vh;
+    background-color: var(---background);
+    border-right:5px solid #fff;
+    border-radius: 0px 40px 40px 0px;
+    position: fixed;
+    left:-440px;
+    top:0;
+    z-index: 999;
+}
+header nav a {
+    font-size: 1.8em;
+    margin: 40px 30px;
+    display: block;
+    color: #fff;
+}
+.active{
+    margin-top: 90px;
+}
+
+.active,
+header nav a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/*----landing-page------*/
+.landingPageOne {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landingPageTwo {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landingPageThree {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.landingPageOne h2,
+.landingPageTwo h2,
+.landingPageThree h2 {
+    font-size: 2.8em;
+    text-align: center;
+}
+
+.landingPageOne p,
+.landingPageTwo p,
+.landingPageThree p {
+    font-size: 1.3em;
+    text-align: center;
+    line-height: 38px;
+    margin-bottom: 30px;
+}
+
+.landingPageOne a,
+.landingPageTwo a,
+.landingPageThree a {
+    padding: 10px 15px;
+    font-size: 1.4em;
+    width: 300px;
+    justify-content: space-around;
+}
+
+.landingPageOne a img,
+.landingPageTwo a img,
+.landingPageThree a img {
+    width: 30px;
+    height: 30px;
+}
+
+/*-page-swicher*/
+.landingPageContainer .pageswitcher {
+    gap: 0.4em;
+    bottom: 50px;
+    right: 30px;
+}
+
+.pageswitcher .switcher {
+    width: 20px;
+    height: 20px;
+}
+
+/*--------about us section------*/
+
+.about .heading h2 {
+    font-size: 2.4em;
+}
+
+.about .heading img {
+    width: 40px;
+    height: 40px;
+}
+
+.aboutContainer .aboutPic {
+    gap: 0.5em;
+}
+
+.aboutPic img {
+    width: 45%;
+    height: 130px;
+}
+
+.aboutText p {
+    font-size: 1.2em;
+    line-height: 34px;
+}
+
+.aboutText a {
+    padding: 10px 20px;
+    font-size: 1.5em;
+}
+
+
+/*-------evetns-section-----*/
+.events {
+    padding: 20px 2%;
+}
+
+.heading h2 {
+    font-size: 2.4em;
+}
+
+.events .heading img {
+    width: 40px;
+    height: 40px;
+}
+
+.eventsContainer .box span {
+    font-size: 1.4em;
+}
+
+.eventsContainer .box b {
+    font-size: 1em;
+}
+
+
+/*---when user clicks on event to know more---*/
+.furtherInfo {
+    width: 50%;
+    padding: 10px 1% 50px;
+    left: 12%;
+    top: 22%;
+}
+
+.furtherInfo .title {
+    font-size: 1.5em;
+}
+
+.furtherInfo .eventImage {
+    height: 240px;
+}
+
+.furtherInfo .time {
+    font-size: 1.2em;
+}
+
+.furtherInfo p {
+    font-size: 0.98em;
+    line-height: 28px;
+}
+
+
+/*------tickets-section----*/
+.tickets {
+    padding: 20px 2%;
+}
+
+.tickets .heading {
+    gap: 0.2em;
+    margin: 20px auto;
+}
+
+.tickets .heading h2 {
+    font-size: 2.4em;
+}
+
+.tickets .heading h5 {
+    font-size: 1.2em;
+}
+
+.tickets .container {
+    gap: 1.2em;
+}
+
+.tickets .container form {
+    width: 48%;
+    padding:10px;
+    gap: 1.4em;
+}
+
+.container form div label {
+    font-size: 1.1em;
+}
+
+.container form div input {
+    font-size: 1em;
+}
+
+div span {
+    font-size: 1em;
+}
+
+div .plus{
+    font-size: 1.4em;
+}
+
+.container .ticketImages .img {
+    width: 49%;
+    height: 120px;
+}
+
+/**/
+
+
+.bar h4 {
+    font-size: 1em;
+}
+
+.bar .arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.arrow span {
+    font-size: 1em;
+    margin-left: 3px;
+}
+
+.dropDown .option {
+    padding: 7px;
+}
+
+.dropDown .option b {
+    padding: 2px 60% 2px 2px;
+}
+
+/*-------footer----------*/
+footer {
+    padding: 20px 1%;
+}
+
+footer .row {
+    gap: 0.3em;
+}
+
+footer .row .col-1 .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.col-1 p {
+    font-size: 1.1em;
+    line-height: 24px;
+}
+
+.row .col-2 h2 {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 1px;
+
+}
+
+.col-2 a {
+    font-size: 0.7em;
+    display: inline;
+}
+
+.col-3 h2 {
+    font-size: 1.2em;
+    margin-bottom: 1px;
+
+}
+
+.col-3 a {
+    font-size: 0.7em;
+}
+
+.col-4 h2 {
+    font-size: 1.2em;
+    margin-bottom: 1px;
+
+}
+
+.col-4 a {
+    font-size: 0.7em;
+}
+
+footer .row .col-2 {
+    width: 24%;
+ 
+}
+
+footer .col-3 {
+    width: 24%;
+}
+
+footer .row .col-4 {
+    width: 24%;
+}
+
+.twitter {
+    width: 22px;
+}
+
+.col-4 a img{
+    width: 22px;
+}
+
+
+}

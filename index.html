@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="XmasGo: The best Christmas Event">
+    <meta property="og:description" content="Let's make your Chirstmas the most memorable">
+    <meta property="og:image" content="christmas-bell (1).jpg">
+    <title>XmasG0| A Christmas Party</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!----navigation--bar-->
+    <header>
+        <div class="logo"> <img src="icons/christmas-tree.png"> XmasGo</div>
+        <img class="menuBtn" src="icons/menu (1).png" alt="menu button">
+        <nav class="navLinks">
+            <img class="closeBtn" src="icons/close.png" alt="close button">
+            <a class="link active" href="#Home">Home</a>
+            <a class="link" href="#About">About</a>
+            <a class="link" href="#Events">Events</a>
+            <a class="link" href="#Tickets">Tickets</a>
+            <a class="link" href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <!------landing-page---------->
+    <div class="landingPageContainer" id="Home">
+        <!---landing-page-one-->
+        <div class="landingPageOne">
+            <h2>Make Your <br> Christmas Memorable</h2>
+            <p>Join hundreds of people in Ghana and embark on a christmas <br> expedition.
+                lorem ipsum dolor sit text amet.
+            </p>
+            <a href="#Tickets">Buy Your Tickets <img src="icons/ticket.png"></a>
+        </div>
+
+        <!---landing-page-two-->
+
+        <div class="landingPageTwo">
+            <h2>Feast 4: Kumasi Edition</h2>
+            <p>It is the Most Wonderful Time of the Year! Gather your loved ones <br> and join our festive Christmas
+                party. Join us at Anonymous <br> hotel and enjoy games, prizes and merrimet galore.
+            </p>
+            <a href="#Events">Event Outline <img src="icons/right-arrow (1).png"></a>
+        </div>
+
+        <!---landing-page-three-->
+
+        <div class="landingPageThree">
+            <h2>Fun and Festive</h2>
+            <p>Get ready to jingle and mingle! Join us for and unforgettable Christmas<br> party experience. Enjoy
+                delicious food, refreshing drinks <br> and joyful tunes with friends, family or colleagues
+            </p>
+            <a href="#Tickets">Buy Your Tickets <img src="icons/ticket (1).png"></a>
+        </div>
+
+        <!---page-swicher-->
+
+        <div class="pageswitcher">
+            <span class="switcher switcher-a"></span>
+            <span class="switcher"></span>
+            <span class="switcher"></span>
+        </div>
+    </div>
+
+    <!-------about-section-------->
+    <section class="about" id="About">
+        <div class="heading">
+            <img src="icons/multiple-users-silhouette (1).png" alt="people">
+            <h2>Who We Are </h2>
+        </div>
+
+        <div class="aboutContainer">
+            <div class="aboutPic">
+                <img src="images/about1.jpg" alt="about image">
+                <img src="images/about2.jpg" alt="about image">
+                <img src="images/about3.jpg" alt="about image">
+                <img src="images/about4.jpg" alt="about image">
+            </div>
+            <div class="aboutText">
+                <p>
+                    At XmasGo, we're passionate about crafting unforgettable experiences that bring people together. As
+                    a premier event planning club, we specialize in designing, planninig and executing exceptional
+                    events that excees our clients' expectations.
+                </p>
+                <a href="#Contact">Contact us</a>
+            </div>
+        </div>
+    </section>
+
+    <!----events-section----->
+    <section class="events" id="Events">
+        <div class="heading">
+            <h2>Programme Outline</h2>
+            <img src="icons/christmas-bell (1).png" alt="">
+        </div>
+        <div class="eventsContainer">
+
+            <div class="box" onclick="show('images/openCeremony2.jpg','Opening Ceremony','8:00am - 9:00am')">
+                <img src="images/opening ceremony.jpeg" alt="events">
+                <span>Opening Ceremony</span>
+                <b>8:00am - 9:00am </b>
+            </div>
+
+            <div class="box" onclick="show('images/liveband2.jpg','Live Band','9:00am - 10:30am ')">
+                <img src="images/liveband.jpg" alt="events">
+                <span>Live Band</span>
+                <b>9:00am - 10:30am </b>
+            </div>
+
+            <div class="box" onclick="show('images/livePerfomance2.jpg','Live Performance','10:30am - 11:40am ')">
+                <img src="images/livePerformance.jpg" alt="events">
+                <span>Live Performance</span>
+                <b>10:30am - 11:40am </b>
+            </div>
+
+            <div class="box" onclick="show('images/lunch2.jpeg','Open Lunch','12:00pm - 12:30pm')">
+                <img src="images/lunch.jpg" alt="events">
+                <span>Open Lunch</span>
+                <b>12:00pm - 12:30pm </b>
+            </div>
+
+            <div class="box" onclick="show('images/poolparty2.jpg','Pool Party','12:40pm - 2:00pm')">
+                <img src="images/poolparty.jpg" alt="events">
+                <span>Pool Party</span>
+                <b>12:40pm - 2:00pm </b>
+            </div>
+
+            <div class="box" onclick="show('images/standUpComedy2.jpg','Stand Up Comedy','2:15pm - 3:00pm ')">
+                <img src="images/standupComedy.jpg" alt="events">
+                <span>Stand Up Comedy</span>
+                <b>2:15pm - 3:00pm </b>
+            </div>
+
+            <div class="box" onclick="show('images/dinner2.jpg','Open Dinner ','4:10pm - 4:40pm')">
+                <img src="images/dinner.jpg" alt="events">
+                <span>Open Dinner </span>
+                <b>4:10pm - 4:40pm </b>
+            </div>
+
+            <div class="box" onclick="show('images/movieNight2.jpg','Movie Night','4:50pm - 6:50pm')">
+                <img src="images/movieNight.jpg" alt="events">
+                <span>Movie Night</span>
+                <b>4:50pm - 6:50pm </b>
+            </div>
+
+            <div class="box" onclick="show('images/closeingceremony2.jpg','Closing Ceremony','6:50pm - 7:20pm')">
+                <img src="images/closingceremony.jpg" alt="events">
+                <span>Closing Ceremony</span>
+                <b>6:50pm - 7:20pm </b>
+            </div>
+
+        </div>
+        <!---when user clicks on event to know more--->
+        <!-----------
+        <div class="furtherInfo">
+            <img class="furtherInfoClose" src="icon/close.png">
+        
+            <h2 class="title">Number One Event</h2>
+            <img class="eventImage" src="images/movieNight.jpg" alt="further info image">
+            <span class="time"></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam cum, quia vitae quam vel ab quo debitis culpa iusto earum necessitatibus beatae eaque laudantium? In blanditiis a at perspiciatis expedita.
+            Saepe in eos dolorum ad asperiores error deserunt natus, laborum sed eligendi. Beatae doloremque aspernatur atque illum sed provident similique debitis esse maiores corporis facere, ipsum dicta, rerum blanditiis nemo?
+            Nostrum quisquam eum officia molestias laborum ipsam quia reiciendis odit rerum, dolorum ducimus nobis obcaecati deserunt odio sunt esse eaque magnam aperiam veritatis nemo</p>
+            -------------------->
+    </section>
+
+    <!-------tickets-section----->
+    <section class="tickets" id="Tickets">
+        <div class="heading">
+            <h2>Get Your Tickets</h2>
+            <h5>For Yourself and loved Ones</h5>
+        </div>
+
+        <div class="container">
+            <form>
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="emailOrPhone">Email/Phone:</label>
+                    <input id="emailOrPhone" name="emailOrPhone">
+                </div>
+                <div>
+                    <label>Tickets for:</label>
+                    <span class="plus" onclick="increase()">+</span>
+                    <span class="numOfTickets">0</span>
+                    <span onclick="decrease()">ClearAll</button>
+                </div>
+                <div>
+                    <label for="payWith">Pay With:</label>
+                    <div class="bar">
+                        <h4> <span class="method"> </span></h4>
+                        <div class="arrow"><span> > </span></div>
+                    </div>
+                    <div class="dropDown">
+                        <div class="option">
+                            <b onclick="payWith('Paypal')">PayPal</b>
+                        </div>
+                        <div class="option">
+                            <b onclick="payWith('MTN Momo')">MTN Momo</b>
+                        </div>
+                        <div class="option">
+                            <b onclick="payWith('Telecel Cash')">Telecel Cash</b>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="ticketImages">
+                <!--<img class="img" src="images/ticket.jpg" alt="ticket image">--->
+            </div>
+        </div>
+    </section>
+
+    <!-------footer-section------------>
+    <footer id="Contact">
+        <div class="row">
+            <div class="col-1">
+                <div class="logo">
+                    <img src="icons/christmas-tree.png"> XmasGo
+                </div>
+                <p>At XmasGo, we're passionate about crafting unforgettable experiences that bring people together. As
+                    a premier event planning club, we specialize in designing, planninig and executing exceptional
+                    events that excees our clients' expectations.</p>
+            </div>
+            <div class="col-2">
+                <h2>Useful Links</h2>
+                <a class="link active" href="#Home">Home</a>
+                <a class="link" href="#About">About</a>
+                <a class="link" href="#Events">Events</a>
+                <a class="link" href="#Tickets">Tickets</a>
+                <a class="link" href="#Contact">Contact</a>
+            </div>
+            <div class="col-3">
+                <h2>Sponsors</h2>
+                <a href="#">Adom TV</a>
+                <a href="#">Kivo</a>
+                <a href="#">Telecel Ghana</a>
+                <a href="#">Angel Fm</a>
+                <a href="#">Jumia</a>
+            </div>
+            <div class="col-4">
+                <h2>Contact Us</h2>
+                <a href="#"> <img class="twitter" src="icons/close.png"></a>
+                <a href="#"> <img src="icons/instagram (4).png"></a>
+                <a href="#"> <img src="icons/linkedin (1).png"></a><br>
+                <a class="whatsapp" href="#">
+                    <img src="icons/whatsapp (2).png"><b>0234567890</b>
+                </a>
+                <a href="#">
+                    <p>Email:</p><b>xmasgo@gmail.com</b>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
